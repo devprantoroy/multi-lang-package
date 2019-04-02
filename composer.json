@@ -1,0 +1,19 @@
+{
+    "name": "pranto/multi-language",
+    "description": "This will work for multi-language",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pranto",
+            "email": "pranto101201@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Pranto\\MultiLanguage\\": "src/"
+        }
+    }
+}
