@@ -11,8 +11,8 @@ class MultiLanguageServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__.'/route/web.php');
-//        $router = $this->app['router'];
-//        $router->pushMiddlewareToGroup('web', ChangeLanguage::class);
+        $router = $this->app['router'];
+        $router->pushMiddlewareToGroup('web', ChangeLanguage::class);
 
     }
 
