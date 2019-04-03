@@ -1,4 +1,3 @@
-# multi-lang-package
-# Create migration table for database.
-# Create your resourse blade php as your pattern.
-# Check documentation for detail.
+# Pranto Multilanguage
+Pranto Multilanguage is a **dynamic multi-language** system. Where admin can easily add/romove language as he likes.
+
