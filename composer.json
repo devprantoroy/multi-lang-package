@@ -15,5 +15,12 @@
         "psr-4": {
             "Pranto\\MultiLanguage\\": "src/"
         }
+    },
+    "extra": {
+    "laravel": {
+        "providers": [
+            "Pranto\\MultiLanguage\\MultiLanguageServiceProvider"
+        ]
     }
+}
 }
