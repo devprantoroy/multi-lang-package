@@ -18,6 +18,15 @@ If you are using Laravel 5.0 - 5.4 then you need to add a provider and alias. In
 ### How To Implement In View
 This package is easy to use. It provides a handful of helpful functions for changing language. Add similar this code to frontend.
 
+Make just a migration table: 
+
+> `php artisan make:migration create_languages_table`
+
+then run:
+
+> `php artisan migrate`
+
+Now add:
 
 <div>
 
