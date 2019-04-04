@@ -18,19 +18,30 @@ If you are using Laravel 5.0 - 5.4 then you need to add a provider and alias. In
 ### How To Implement In View
 This package is easy to use. It provides a handful of helpful functions for changing language. Add similar this code to frontend.
 
-`<select id="langSel">
-	<option style="color: black" value="en"> English</option>
-	@foreach($lang as $data)
-	    <option value="{{$data->code}}" @if(Session::get('lang') === $data->code) selected  @endif> {{$data->name}}</option>
-	@endforeach
-</select>`
-
-` <script>
-	$(document).on('change', '#langSel', function () {
-	    var code = $(this).val();
-	    window.location.href = "{{url('/')}}/change-lang/"+code ;
-	});
-  </script>`
+> `<select id="langSel">
+>
+>	<option style="color: black" value="en"> English</option>
+>	
+>	@foreach($lang as $data)
+>	
+>	    <option value="{{$data->code}}" @if(Session::get('lang') === $data->code) selected  @endif> {{$data->name}}</option>
+>
+>	@endforeach
+>	
+> </select>`
+>
+>
+> ` <script>
+>
+>	$(document).on('change', '#langSel', function () {
+>	
+>	    var code = $(this).val();
+>	    
+>	    window.location.href = "{{url('/')}}/change-lang/"+code ;
+>	    
+>	});
+>	
+>  </script>`
 
 
 
