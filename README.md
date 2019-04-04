@@ -22,6 +22,14 @@ Make just a migration table:
 
 > `php artisan make:migration create_languages_table`
 
+<div>
+
+    $table->string('icon');
+    $table->string('name');
+    $table->string('code');
+    
+</div>
+
 then run:
 
 > `php artisan migrate`
