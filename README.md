@@ -60,8 +60,8 @@ And jQuery :
 
 Add similar this code to backend (Admin Panel):
 
--First create **"language"** folder inside of Laravel > resources > admin folder.
--create "lang.blade.php" & edit_lang.blade.php inside **""language"** folder.
+- First create **"lang"** folder inside of Laravel > resources > folder.
+- create "lang.blade.php" & edit_lang.blade.php inside **""language"** folder.
    
 #### lang.blade.php , add similar this code:
 **Remember**: Watch route name. You can change you design pattern this code is showing for **route name** activities. 
