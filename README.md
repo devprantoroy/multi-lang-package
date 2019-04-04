@@ -5,7 +5,7 @@ Pranto Multilanguage is a **dynamic multi-language** system. Where admin can eas
 ### Composer Installation
 Installation is straightforward, setup is similar to every other Laravel Package.
 
-`composer require pranto/multi-language`
+> `composer require pranto/multi-language`
 
 **Note**: This package supports the new auto-discovery features of Laravel 5.5, so if you are working on a Laravel 5.5 project, then your install is complete, you can skip to step 3.
 
