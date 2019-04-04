@@ -340,3 +340,4 @@ Add similar this code to backend (Admin Panel):
         </script>
     
     
+** That's it, send mail for more detail "pranto101201@gmail.com" **
