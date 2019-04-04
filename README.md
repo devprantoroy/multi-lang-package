@@ -24,6 +24,7 @@ This package is easy to use. It provides a handful of helpful functions for chan
 	    <option value="{{$data->code}}" @if(Session::get('lang') === $data->code) selected  @endif> {{$data->name}}</option>
 	@endforeach
 </select>`
+
 ` <script>
 	$(document).on('change', '#langSel', function () {
 	    var code = $(this).val();
