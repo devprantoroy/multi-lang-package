@@ -18,7 +18,7 @@ class FrontendController extends Controller
         if (!$language) $lang = 'en';
         session()->put('lang', $lang);
 
-        return $lang;
+   
 
         return redirect()->back();
     }
