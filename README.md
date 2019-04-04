@@ -11,9 +11,9 @@ Installation is straightforward, setup is similar to every other Laravel Package
 
 If you are using Laravel 5.0 - 5.4 then you need to add a provider and alias. Inside of your config/app.php define a new service provider
 
-`'providers' => [
-	Pranto\MultiLanguage\MultiLanguageServiceProvider::class,
-];`
+> `'providers' => [
+>	Pranto\MultiLanguage\MultiLanguageServiceProvider::class,
+> ];`
 
 ### How To Implement In View
 This package is easy to use. It provides a handful of helpful functions for changing language. Add similar this code to frontend.
