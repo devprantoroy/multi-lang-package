@@ -26,7 +26,7 @@ class LanguageController extends Controller
             return back()->with('alert', 'Default Language');
         }
 
-        $data = file_get_contents(resource_path('lang/').'default.json');
+        $data = file_get_contents(__DIR__.'/../lang/default.json');
         $json_file = $request->code.'.json';
         $path = resource_path('lang/'). $json_file;
 
