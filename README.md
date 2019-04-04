@@ -81,7 +81,7 @@ Add similar this code to backend (Admin Panel):
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach ($social as $product)
+                        @foreach ($lang_list as $product)
                             <tr>
                                 <td><img src="{{asset('assets/images/'.$product->icon)}}"></td>
                                 <td>{{$product->name}}</td>
