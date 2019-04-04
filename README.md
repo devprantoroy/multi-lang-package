@@ -55,6 +55,7 @@ Add similar this code to backend (Admin Panel):
    
 #### lang.blade.php , add similar this code:
 **Remember**: Watch route name. You can change you design pattern this code is showing for **route name** activities. 
+**Add This Route/URL**: route('language-manage') / url('language/manager')
 
         <div class="tile">
                 <div class="table-responsive">
