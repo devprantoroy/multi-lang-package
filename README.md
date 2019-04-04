@@ -74,7 +74,6 @@ Add similar this code to backend (Admin Panel):
                             <br>
                         <thead>
                         <tr>
-                            <th>Icon</th>
                             <th>Name</th>
                             <th>Code</th>
                             <th>Actions</th>
@@ -83,7 +82,6 @@ Add similar this code to backend (Admin Panel):
                         <tbody>
                         @foreach ($lang_list as $product)
                             <tr>
-                                <td><img src="{{asset('assets/images/'.$product->icon)}}"></td>
                                 <td>{{$product->name}}</td>
                                 <td style="font-size: 22px;">{!! $product->code !!}</td>
                                 <td>
@@ -103,17 +101,6 @@ Add similar this code to backend (Admin Panel):
                                         <form method="post" action="{{route('language-manage-update', $product->id)}}" enctype="multipart/form-data">
                                             {{csrf_field()}}
                                             <div class="modal-body">
-
-                                                <div class="form-group error">
-                                                    <div class="col-sm-12 mx-auto">
-                                                        <img class="mx-auto" width="100px" src="{{asset('assets/images/'.$product->icon)}}">
-                                                    </div>
-
-                                                    <label for="inputName" class="col-sm-12 ">Flag Icon (PNG must) : </label>
-                                                    <div class="col-sm-12">
-                                                        <input type="file" class="form-control has-error bold " name="icon" >
-                                                    </div>
-                                                </div>
                                                 <div class="form-group error">
                                                     <label for="inputName" class="col-sm-12 ">Language Name : </label>
                                                     <div class="col-sm-12">
@@ -172,13 +159,6 @@ Add similar this code to backend (Admin Panel):
                 <form class="form-horizontal" method="post" action="{{route('language-manage-store')}}" enctype="multipart/form-data">
                     {{csrf_field()}}
                     <div class="modal-body">
-                        <div class="form-group error">
-
-                            <label for="inputName" class="col-sm-12 ">Flag Icon (PNG must) : </label>
-                            <div class="col-sm-12">
-                                <input type="file" class="form-control has-error bold " name="icon">
-                            </div>
-                        </div>
                         <div class="form-group error">
                             <label for="inputName" class="col-sm-12 ">Language Name : </label>
                             <div class="col-sm-12">
